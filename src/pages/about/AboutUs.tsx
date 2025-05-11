@@ -42,39 +42,6 @@ const AboutUs: React.FC = () => {
         </div>
       </div>
 
-      {/* Team Section */}
-      <div className="mb-16">
-        <h2 className="text-3xl font-bold text-center mb-8">Our Team</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <img
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
-              alt="Team Member"
-              className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-            />
-            <h3 className="text-xl font-semibold">Dr. Sarah Johnson</h3>
-            <p className="text-gray-600">Agricultural AI Expert</p>
-          </div>
-          <div className="text-center">
-            <img
-              src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
-              alt="Team Member"
-              className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-            />
-            <h3 className="text-xl font-semibold">Dr. Michael Chen</h3>
-            <p className="text-gray-600">Machine Learning Specialist</p>
-          </div>
-          <div className="text-center">
-            <img
-              src="https://images.pexels.com/photos/2379006/pexels-photo-2379006.jpeg"
-              alt="Team Member"
-              className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-            />
-            <h3 className="text-xl font-semibold">Dr. Priya Patel</h3>
-            <p className="text-gray-600">Agricultural Scientist</p>
-          </div>
-        </div>
-      </div>
 
       {/* Values */}
       <div className="bg-white rounded-lg shadow-md p-8 mb-16">
