@@ -8,8 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start-api": "cd backend && flask run --no-debugger",
-    "dev:all": "concurrently \"npm run dev\" \"npm run start-api\""
+    "start-api": "cd backend && python -m flask run",
+    "start": "concurrently \"npm run dev\" \"npm run start-api\""
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",

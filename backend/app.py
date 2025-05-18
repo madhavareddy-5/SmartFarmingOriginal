@@ -656,5 +656,13 @@ def fertilizer_recommendation():
     except Exception as e:
         return jsonify({'message': f'Error generating fertilizer recommendations: {str(e)}'}), 500
 
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve_react(path):
+    if path != "" and os.path.exists(os.path.join('../dist', path)):
+        return send_from_directory('../dist', path)
+    else:
+        return send_from_directory('../dist', 'index.html')
+    
 if __name__ == "__main__":
     app.run(debug=True)
