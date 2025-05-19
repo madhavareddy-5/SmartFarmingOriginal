@@ -656,14 +656,14 @@ def fertilizer_recommendation():
     except Exception as e:
         return jsonify({'message': f'Error generating fertilizer recommendations: {str(e)}'}), 500
 
-@app.route("/", defaults={"path": ""})
-@app.route("/<path:path>")
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
 def serve_react(path):
     static_folder = os.path.join(os.path.dirname(__file__), "dist")
     if path != "" and os.path.exists(os.path.join(static_folder, path)):
         return send_from_directory(static_folder, path)
     else:
-        return send_from_directory(static_folder, "index.html")
+        return send_from_directory(static_folder, 'index.html')
     
 if __name__ == "__main__":
     app.run(debug=True)
